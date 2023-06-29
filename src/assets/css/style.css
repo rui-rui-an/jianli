@@ -2630,6 +2630,10 @@ img.aligncenter {
 .avatar-195 {
   width: 195px;
   height: 195px;
+  margin: 0 auto;
+  background-image: url('@/assets/img/my/me.jpg');
+  background-size: cover;
+  background-position: 0px -8px;
 }
 
 /**
@@ -5580,7 +5584,7 @@ h1, h2, h3, h4, h5, h6 {
 .award-img img {
   max-height: 180px;
   vertical-align: middle;
-  padding-left: 60px;
+  /* padding-left: 60px; */
 }
 
 .award-title {

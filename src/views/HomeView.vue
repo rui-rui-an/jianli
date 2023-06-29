@@ -6,7 +6,8 @@
       </header>
       <article id="ace-card" class="ace-card bg-primary">
         <div class="ace-card-inner text-center">
-          <img class="avatar avatar-195" src="@/assets/img/my/me.jpg" width="195" height="195" alt="" />
+          <!-- <img class="avatar avatar-195" src="@/assets/img/my/me.jpg" width="195" height="195" alt="" /> -->
+          <div class="avatar avatar-195"></div>
           <h1>廖睿</h1>
           <p class="text-muted">深圳 | 广道 | 前端开发工程师</p>
           <ul class="ace-social clear-list">
@@ -43,21 +44,22 @@
                       <a href="#basic_info" data-tooltip="基本信息"><span class="ace-icon ace-icon-home"></span></a>
                     </li>
                     <li>
-                      <a href="#profetional" data-tooltip="职业技能"><span class="ace-icon ace-icon-experience"></span></a>
-                    </li>
-
-                    <li>
-                      <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
-                    </li>
-
-                    <li>
-                      <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
-                    </li>
-                    <li>
-                      <a href="#certification" data-tooltip="获得证书"><span class="ace-icon ace-icon-blog"></span></a>
-                    </li>
-                    <li>
                       <a href="#personal_project" data-tooltip="个人作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
+                    </li>
+
+
+                    <!-- <li>
+                      <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
+                    </li> -->
+
+                    <!-- <li>
+                      <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
+                    </li> -->
+                    <li>
+                      <a href="#certification" data-tooltip="证书一类"><span class="ace-icon ace-icon-blog"></span></a>
+                    </li>
+                    <li>
+                      <a href="#profetional" data-tooltip="职业技能"><span class="ace-icon ace-icon-experience"></span></a>
                     </li>
                   </ul>
                 </nav>
@@ -82,11 +84,11 @@
                 <!-- START: PAGE CONTENT -->
                 <div class="padd-box clear-mrg">
                   <Basic01 />
-                  <Profetional02 />
-                  <Education03 />
-                  <Experience04 />
-                  <Certification05 />
                   <PersonalProject06 />
+                  <!-- <Education03 /> -->
+                  <!-- <Experience04 /> -->
+                  <Certification05 />
+                  <Profetional02 />
                 </div>
                 <!-- .padd-box -->
                 <!-- END: PAGE CONTENT -->
@@ -114,8 +116,8 @@
 <script>
 import Basic01 from './components/Basic01.vue';
 import Profetional02 from './components/Profetional02.vue';
-import Education03 from './components/Education03.vue';
-import Experience04 from './components/Experience04.vue';
+// import Education03 from './components/Education03.vue';
+// import Experience04 from './components/Experience04.vue';
 import Certification05 from './components/Certification05.vue';
 import PersonalProject06 from './components/PersonalProject06.vue';
 export default {
@@ -128,7 +130,7 @@ export default {
   computed: {},
   created() {},
   methods: {},
-  components: { Basic01, Profetional02, Education03, Experience04, Certification05, PersonalProject06 }
+  components: { Basic01, Profetional02, Certification05, PersonalProject06 }
 };
 </script>
 <style lang="less" scoped></style>

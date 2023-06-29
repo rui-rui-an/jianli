@@ -7,22 +7,22 @@
 
           <dl class="dl-horizontal clear-mrg">
             <dt class="text-upper">性别</dt>
-            <dd>女</dd>
+            <dd>男</dd>
 
             <dt class="text-upper">出生日期</dt>
-            <dd>09 Jan 1991</dd>
+            <dd>1996-04-12</dd>
 
             <dt class="text-upper">手机</dt>
-            <dd>1580424XXXX</dd>
+            <dd>15979058318</dd>
 
             <dt class="text-upper">e-mail</dt>
-            <dd><a href="mailto:xxxx@xx.com">xxxx@xx.com</a></dd>
+            <dd><a href="mailto:xxxx@xx.com">jiangxi_lr@163.com</a></dd>
 
             <dt class="text-upper">英语</dt>
             <dd>CET-6</dd>
 
-            <dt class="text-upper">日语</dt>
-            <dd>一级</dd>
+            <dt class="text-upper">学历</dt>
+            <dd>本科</dd>
           </dl>
         </div>
         <!-- .col-sm-6 -->
