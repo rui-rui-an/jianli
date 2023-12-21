@@ -21,7 +21,7 @@
               <a title="15979058318"><span class="ace-icon ace-icon-phone"></span></a>
             </li>
             <li>
-              <a :href="site.email" title="site.email"><span class="ace-icon ace-icon-contact"></span></a>
+              <a :href="site.email" title="jiangxi_lr@163.com"><span class="ace-icon ace-icon-contact"></span></a>
             </li>
           </ul>
         </div>
@@ -38,15 +38,15 @@
                 <nav id="ace-nav" class="ace-nav">
                   <ul class="clear-list">
                     <li>
-                      <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="@/assets/img/show-star.png" alt="" /></a>
+                      <!-- <a href="/" data-tooltip="Home"><img class="avatar avatar-42" src="@/assets/img/show-star.png" alt="" /></a> -->
+                      <a href="/" data-tooltip="Home"><img class="avatar avatar-42" src="@/assets/img/my/me.jpg" alt="" /></a>
                     </li>
                     <li>
                       <a href="#basic_info" data-tooltip="基本信息"><span class="ace-icon ace-icon-home"></span></a>
                     </li>
                     <li>
-                      <a href="#personal_project" data-tooltip="个人作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
+                      <a href="#personal_project" data-tooltip="项目作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
                     </li>
-
 
                     <!-- <li>
                       <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
@@ -124,7 +124,11 @@ export default {
   name: 'HomeView',
   data() {
     return {
-      site: {}
+      site: {
+        github: 'https://github.com/rui-rui-an',
+        facebook: 'https://blog.csdn.net/weixin_43239880?type=blog',
+        email: 'mailto:jiangxi_lr@163.com'
+      }
     };
   },
   computed: {},

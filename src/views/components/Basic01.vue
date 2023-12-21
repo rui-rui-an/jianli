@@ -23,6 +23,15 @@
 
             <dt class="text-upper">学历</dt>
             <dd>本科</dd>
+
+            <dt class="text-upper">博客</dt>
+            <dd><a href="https://blog.csdn.net/weixin_43239880?type=blog">前往查看</a></dd>
+
+            <dt class="text-upper">掘金</dt>
+            <dd><a href="https://juejin.cn/user/1143118904170007/posts">前往查看</a></dd>
+
+            <dt class="text-upper">Github</dt>
+            <dd><a href="https://github.com/rui-rui-an">前往查看</a></dd>
           </dl>
         </div>
         <!-- .col-sm-6 -->

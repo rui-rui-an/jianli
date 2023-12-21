@@ -22,8 +22,8 @@
               </span>
             </div>
 
-            <!-- <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-              <strong class="progress-title">HTML</strong>
+            <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+              <strong class="progress-title">Git</strong>
               <span class="progress-bar">
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
@@ -62,13 +62,13 @@
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
-                <span class="bullet"></span>
-                <span class="bullet"></span>
-                <span class="bullet"></span>
+                <span class="bullet fill"></span>
+                <span class="bullet fill"></span>
+                <span class="bullet fill"></span>
                 <span class="bullet"></span>
                 <span class="bullet"></span>
               </span>
-            </div> -->
+            </div>
           </div>
 
           <div class="col-sm-6 clear-mrg">
@@ -88,8 +88,8 @@
               </span>
             </div>
 
-            <!-- <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-              <strong class="progress-title">Spark</strong>
+            <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+              <strong class="progress-title">Webpack</strong>
               <span class="progress-bar">
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
@@ -105,7 +105,7 @@
             </div>
 
             <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-              <strong class="progress-title">Storm</strong>
+              <strong class="progress-title">ElementUi</strong>
               <span class="progress-bar">
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
@@ -121,7 +121,7 @@
             </div>
 
             <div class="progress-bullets crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-              <strong class="progress-title">Jekyll</strong>
+              <strong class="progress-title">Uniapp</strong>
               <span class="progress-bar">
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
@@ -132,9 +132,9 @@
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
                 <span class="bullet fill"></span>
-                <span class="bullet fill"></span>
+                <span class="bullet"></span>
               </span>
-            </div> -->
+            </div>
           </div>
         </div>
         <!-- .col-sm-6 -->

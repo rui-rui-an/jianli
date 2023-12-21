@@ -1,63 +1,45 @@
 <template>
   <div class="personal_project06">
     <section class="section" id="personal_project">
-      <h2 class="title-thin text-muted">个人作品</h2>
-      <div class="pf-wrap">
-        <div class="pf-grid">
-          <div class="pf-grid-sizer"></div>
+      <h2 class="title-thin text-muted">项目作品</h2>
+      <div>
+        <div>
+          <div></div>
           <!-- used for sizing -->
 
-          <div class="pf-grid-item photography">
+          <div class="photography">
             <div class="project">
               <figure class="portfolio-figure">
-                <img src="@/assets/img/portfolio/ibms.jpg" alt="" />
+                <img src="@/assets/img/dashuju/title.png" alt="" />
               </figure>
               <div class="portfolio-caption text-center">
                 <div class="valign-table">
                   <div class="valign-cell">
-                    <h2 class="text-upper">智能楼宇管理系统</h2>
-                    <p>基于数据采集模型的智能楼宇管理系统，支持SNMP,Modbus,电总, OPC等协议。</p>
-                    <a href="#pf-popup-1" class="pf-btn-view btn btn-primary">详情</a>
+                    <h2 class="text-upper">公安大数据实战平台</h2>
+                    <p>基于公安数据采集模型的大数据研判系统，负责公安数据的管理，展示和分析。</p>
+                    <!-- <a href="#pf-popup-1" class="pf-btn-view btn btn-primary">图片</a> -->
+                    <a class="btn btn-primary" @click="clickEvent(59, 'dashuju')">图片</a>
+                    <a href="https://dwyp.suntang.com" class="btn btn-primary" target="_blank">前往</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="pf-popup-1" class="pf-popup clearfix">
-              <div class="pf-popup-col1">
-                <div class="pf-popup-media"></div>
-              </div>
-              <!-- .pf-popup-col1 -->
-
-              <div class="pf-popup-col2">
-                <div class="pf-popup-info clear-mrg">
-                  <h2 class="text-upper">智能楼宇管理系统</h2>
-                  <p class="text-muted"><strong>design / development</strong></p>
-                  <dl class="dl-horizontal">
-                    <dt>Demo展示地址:</dt>
-                    <dd><a href="https://gitee.com/xiaodan_yu/resume.io">Demo</a></dd>
-                  </dl>
-                  <p>基于数据采集模型的智能楼宇管理系统，支持SNMP,Modbus,电总, OPC等协议。</p>
-                </div>
-                <!-- .pf-popup-info -->
-              </div>
-              <!-- .pf-popup-col2 -->
             </div>
             <!-- .pf-popup -->
           </div>
           <!-- .pf-grid-item -->
 
-          <div class="pf-grid-item design">
+          <div class="design">
             <div class="project">
               <figure class="portfolio-figure">
-                <img src="@/assets/img/portfolio/prj-02.jpg" alt="" />
+                <img src="@/assets/img/guangdaoyun/title.jpg" alt="" />
               </figure>
 
               <div class="portfolio-caption text-center">
                 <div class="valign-table">
                   <div class="valign-cell">
-                    <h2 class="text-upper">Jekyll 简历模板</h2>
-                    <p>基于Jekyll的简历模板，托管在码云。记得给个赞哦！</p>
-                    <a href="https://gitee.com/xiaodan_yu/resume.io" class="pf-btn-view btn btn-primary" target="_blank">详情</a>
+                    <h2 class="text-upper">广道云</h2>
+                    <p>通过拖拉拽的交互方式用于民警自制表单用于问卷调查及其他数据收集的系统</p>
+                    <a class="btn btn-primary" @click="clickEvent(30, 'guangdaoyun')">图片</a>
                   </div>
                 </div>
               </div>
@@ -65,17 +47,18 @@
           </div>
           <!-- .pf-grid-item -->
 
-          <div class="pf-grid-item photography">
+          <div class="photography">
             <div class="project">
               <figure class="portfolio-figure">
-                <img src="@/assets/img/portfolio/ai.jpg" alt="" />
+                <img src="@/assets/img/yujing/title.jpg" alt="" />
               </figure>
 
               <div class="portfolio-caption text-center">
                 <div class="valign-table">
                   <div class="valign-cell">
-                    <h2 class="text-upper">股票预测模型</h2>
-                    <p>基于AI的股票预测模型</p>
+                    <h2 class="text-upper">多维研判预警系统</h2>
+                    <p>基于electron开发的电脑桌面应用，主要用于检测系统的预警反馈到电脑上通知民警</p>
+                    <a class="btn btn-primary" @click="clickEvent(8, 'yujing')">图片</a>
                   </div>
                 </div>
               </div>
@@ -86,13 +69,39 @@
       </div>
     </section>
     <!-- .section -->
+    <el-image style="max-height: 180px" v-show="false" ref="cFImg" :src="require('@/assets/img/dashuju/title.png')" :preview-src-list="previewSrcList"></el-image>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      previewSrcList: []
+    };
+  },
+  methods: {
+    clickEvent(totalNum, pagname) {
+      this.previewSrcList = [];
+      for (let i = 1; i < totalNum; i++) {
+        let temp = require('@/assets/img/' + pagname + '/1 (' + i + ').jpg');
+        this.previewSrcList.push(temp);
+      }
+
+      this.$nextTick(() => {
+        console.log(this.previewSrcList);
+        //根据ref调起el-image组件的预览功能
+        this.$refs.cFImg.clickHandler();
+      });
+    }
+  }
+};
+</script>
+
 <style lang="less" scoped>
-.pf-popup-media{
+.pf-popup-media {
   background-image: url('~@/assets/img/portfolio/ibms.jpg');
-   background-repeat: no-repeat;
-   background-size: cover
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
