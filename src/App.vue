@@ -5,7 +5,7 @@
 </template>
 
 <script>
- document.title  = 'xxx'
+ document.title  = '简历-廖睿'
 </script>
 
 <style lang="less">
