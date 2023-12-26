@@ -56,6 +56,9 @@
                       <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
                     </li> -->
                     <li>
+                      <a href="#personalProject" data-tooltip="个人项目"><span class="ace-icon ace-icon-references"></span></a>
+                    </li>
+                    <li>
                       <a href="#certification" data-tooltip="证书一类"><span class="ace-icon ace-icon-blog"></span></a>
                     </li>
                     <li>
@@ -87,6 +90,7 @@
                   <PersonalProject06 />
                   <!-- <Education03 /> -->
                   <!-- <Experience04 /> -->
+                  <PersonalProject />
                   <Certification05 />
                   <Profetional02 />
                 </div>
@@ -120,6 +124,7 @@ import Profetional02 from './components/Profetional02.vue';
 // import Experience04 from './components/Experience04.vue';
 import Certification05 from './components/Certification05.vue';
 import PersonalProject06 from './components/PersonalProject06.vue';
+import PersonalProject from './components/PersonalProject.vue';
 export default {
   name: 'HomeView',
   data() {
@@ -134,7 +139,7 @@ export default {
   computed: {},
   created() {},
   methods: {},
-  components: { Basic01, Profetional02, Certification05, PersonalProject06 }
+  components: { Basic01, Profetional02, Certification05, PersonalProject06 ,PersonalProject}
 };
 </script>
 <style lang="less" scoped></style>
